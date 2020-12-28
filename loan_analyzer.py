@@ -25,6 +25,7 @@ print(NumOfLoans)
 # @TODO: Use the `sum` function to calculate the total of all loans in the list.
 # Print the total value of the loans
 # YOUR CODE HERE!
+# The sum of all loan
 SumOfLoans=sum(loan_costs)
 print(SumOfLoans)
 
@@ -32,8 +33,10 @@ print(SumOfLoans)
 # @TODO: Using the sum of all loans and the total number of loans, calculate the average loan price.
 # Print the average loan amount
 # YOUR CODE HERE!
+#AvgLoan stands for average loans
 AvgLoan=SumOfLoans/NumOfLoans
 print(AvgLoan)
+
 """Part 2: Analyze Loan Data.
 
 Analyze the loan to determine the investment evaluation.
@@ -88,6 +91,7 @@ fair_value= future_value/(1+0.2/12)**remaining_months
 #    If the present value of the loan is greater than or equal to the cost, then print a message that says the loan is worth at least the cost to buy it.
 #    Else, the present value of the loan is less than the loan cost, then print a message that says that the loan is too expensive and not worth the price.
 # YOUR CODE HERE!
+#CostOfLoan is the loan price of a loan
 CostOfLoan=loan.get("loan_price")
 if fair_value >= CostOfLoan:
     print("The loan is worth at least the cost to buy it.")
@@ -117,6 +121,7 @@ new_loan = {
 #    This function should include parameters for `future_value`, `remaining_months`, and the `annual_discount_rate`
 #    The function should return the `present_value` for the loan.
 # YOUR CODE HERE!
+#PV stands for present value
 def present_value(future_value, remaining_months, annual_discount_rate):
     PV=future_value/(1+annual_discount_rate/12)**remaining_months
     return PV
@@ -170,6 +175,7 @@ loans = [
 
 # @TODO: Create an empty list called `inexpensive_loans`
 # YOUR CODE HERE!
+#set an empty list
 inexpensive_loans=[]
 # @TODO: Loop through all the loans and append any that cost $500 or less to the `inexpensive_loans` list
 # YOUR CODE HERE!
